@@ -7,4 +7,4 @@ $Connection=Get-AutomationConnection -Name AzureRunAsConnection
         -ApplicationId $Connection.ApplicationId `
         -CertificateThumbprint $Connection.CertificateThumbprint 
 
-Stop-AzVM -Name VM1 -ResourceGroupName VMs –Force
+        get-azvm -ResourceGroupName "VMs"
