@@ -7,4 +7,5 @@ $Connection=Get-AutomationConnection -Name AzureRunAsConnection
         -ApplicationId $Connection.ApplicationId `
         -CertificateThumbprint $Connection.CertificateThumbprint 
 
+        # Next line should be alter to use a parameter.
         get-azvm -ResourceGroupName "VMs"
