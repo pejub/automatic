@@ -8,4 +8,4 @@ $Connection=Get-AutomationConnection -Name AzureRunAsConnection
         -CertificateThumbprint $Connection.CertificateThumbprint 
 
         # Next line should be alter to use a parameter.
-        get-azvm -ResourceGroupName "VMs"
+        get-azvm -ResourceGroupName "VMs" | convertto-json
